@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #556b7a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background: radial-gradient(#000022, #000044);
+  background-image: url('imgs/fondo.png');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+header h1 {
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #6b8e8e;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+#controls {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px auto;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(100, 100, 120, 0.15);
+}
+
+label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+input, select, button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 2px solid rgba(150,150,150,0.3);
+  background: #f0f4f8;
+  color: #556b7a;
+  font-size: 14px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+select:focus, input:focus {
+  border: 2px solid #a8dadc;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #a8dadc, #ffe5d9);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 25px rgba(168, 218, 220, 0.6);
+}
+
+#results {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(150,150,150,0.25);
+  width: 95%;
+  max-width: 1200px;
+}
+
+#results h2, #results h3 {
+  color: #6b8e8e;
+  margin-bottom: 10px;
+}
+
+#inputs, #simulationResults, #consequences, #mitigation {
+  background: rgba(240, 244, 248, 0.85);
+  padding: 12px;
+  border-radius: 12px;
+  margin: 10px 0;
+  box-shadow: 0 4px 10px rgba(150,150,150,0.1);
+}
+
+#inputs p, #simulationResults p, #consequences p, #mitigation p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #556b7a;
+}
+
+#viz {
+  border-radius: 16px;
+  background: radial-gradient(circle at center, #f0f4f8 0%, #dbe7ec 100%);
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(150,150,150,0.25);
+  width: 95%;
+  max-width: 1600px;
+  height: 600px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #7a8c99;
+}
+footer a {
+  color: #a8dadc;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
